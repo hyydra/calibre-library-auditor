@@ -22,6 +22,8 @@ import sqlite3
 import unicodedata
 import xml.etree.ElementTree as ET
 
+sys.stdout.reconfigure(line_buffering=True, encoding='utf-8')
+
 WAVY_ACCENTS = {'õ': 'ő', 'û': 'ű', 'Õ': 'Ő', 'Û': 'Ű'}
 MOJIBAKE_SIGNATURES = ['Ã¡', 'Ã©', 'Ã­', 'Ã³', 'Ã¶', 'Å‘', 'Ãº', 'Ã¼', 'Å±', 'Ã‰', 'Ã']
 
